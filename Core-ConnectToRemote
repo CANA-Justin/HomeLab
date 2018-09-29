@@ -1,4 +1,5 @@
 $Server = Read-Host -Prompt 'Input the remote server name'
+Write-Host 'Enter credentials to connect with'
 $cred = Get-Credential
 
 Enter-PSSession -Credential $cred -ComputerName $server
